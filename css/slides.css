@@ -1,0 +1,40 @@
+/* nav styleing */
+#slideshow-nav {  }
+
+/* if you want to put it somewhere else on the page - here you go */
+#slideshow-nav { position: absolute; bottom: 40px; left: 36px; z-index: 1; width: 200px; }
+
+/* you can change Previous, spacer and Next here */
+a.slide-previous::before { content: "Previous"; }
+a.slide-next::before { content: " Next"; }
+span.between-nav::before { content: " | "; }
+
+/* using flex - no need for flex - hopefully */
+#img-container { display: flex; flex-wrap: nowrap; }
+
+/* adjust text space here */
+/* if you really want to hide it use display: none but you wont have any nav */
+#textspace { /*float: left;*/ }
+#textspace p, #textspace blockquote, #textspace code { width: auto; margin-right: 24px; }
+
+#slideshow-wrapper { /*float: left;*/ }
+#slideshow { margin-bottom: 0; }
+#slideshow .picture { line-height: 0; }
+#slideshow .captioning { margin: 0.5em 0 1em 0; padding: 0; line-height: 1.3em; }
+#slideshow .captioning span.media-title { /* font-weight: bold; */ }
+#slideshow .captioning span.media-title-separator::before { content: " / "; }
+#slideshow .captioning span.media-caption {  }
+
+/* slides counter */
+#slides-total { padding: 18px 0 0 18px; font-size: 18px; position: absolute; z-index: 999999999999; top: 0; left: 0; width: 100px; color: white; }
+#slides-total span.current-slide {  }
+#slides-total span.total-slide {  }
+
+#loading { color: #000; position: absolute; z-index: 2000; top: 20px; left: 9px; }
+#loading span { background: #fff; padding: 3px; }
+
+/* this is for videos, flash, etc */
+.videoslide a { display: block; width: 75px; height: 50px; z-index: 100; right: 0; top: 0; position: absolute; }
+
+/* change it to your language or whatever you want */
+.videoslide a span.nextlink:before { display: block; text-align: right; padding: 25px 15px 0 0; content: "Next >"; }
