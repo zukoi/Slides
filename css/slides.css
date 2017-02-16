@@ -2,7 +2,7 @@
 #slideshow-nav {  }
 
 /* if you want to put it somewhere else on the page - here you go */
-#slideshow-nav { position: absolute; bottom: 40px; left: 36px; z-index: 1; width: 200px; }
+#slideshow-nav { /* position: absolute; bottom: 40px; left: 36px; z-index: 1; width: 200px; */ }
 
 /* you can change Previous, spacer and Next here */
 a.slide-previous::before { content: "Previous"; }
