@@ -18,11 +18,10 @@ class Jxs_slides
 		$OBJ =& get_instance();
 		global $default;
 		
-		// remove sleep if it drives you completely insane ;)
-		//sleep(1);
-
+		$media_id = (isset($_POST['i'])) ? (int) $_POST['i'] : 0;
+	
 		$rs = $OBJ->db->fetchRecord("SELECT * FROM ".PX."objects, ".PX."media 
-			WHERE media_id = '$_POST[i]' 
+			WHERE media_id = '$media_id' 
 			AND media_ref_id = id");
 	
 		$caption = ($rs['media_title'] == '') ? '' : "<div class='title'>" . $rs['media_title'] . "</div>";
